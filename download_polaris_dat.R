@@ -2,8 +2,6 @@ library(raster)
 library(rgdal)
 library(stringr)
 
-
-
 #where do you want things to go?
 baseDir <- '~/mpgPostdoc/projects/forbNiche/data/rasters/environemntal/soil/'
 if(!dir.exists(baseDir)){dir.create(baseDir)}
