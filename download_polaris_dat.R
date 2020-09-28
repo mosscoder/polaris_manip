@@ -6,7 +6,7 @@ library(stringr)
 baseDir <- '~/mpgPostdoc/projects/forbNiche/data/rasters/environemntal/soil/'
 if(!dir.exists(baseDir)){dir.create(baseDir)}
 
-#the following determines the tiles to download based on the extent of a template raster extent
+#the following determines the tiles to download based on the extent of a template raster 
 template <- raster('~/mpgPostdoc/projects/forbNiche/data/rasters/environemntal/env.tif')
 e <- as(extent(template), 'SpatialPolygons')
 proj4string(e) <- crs(template)
